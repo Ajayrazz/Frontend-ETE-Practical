@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cookie Consent Banner</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="relative min-h-screen bg-gray-100 flex flex-col justify-end">
+
+<!-- Your main content -->
+<div class="flex-grow flex justify-center items-center">
+  <h1 class="text-3xl font-bold">Welcome to My Website</h1>
+</div>
+
+<!-- Cookie Consent Banner -->
+<div id="cookieBanner" class="fixed bottom-0 left-0 w-full bg-white border-t p-4 shadow-md flex flex-col md:flex-row items-center justify-between gap-4">
+  <p class="text-gray-700 text-center md:text-left">
+    We use cookies to improve your experience. By using our site, you agree to our use of cookies.
+  </p>
+  <button id="acceptCookies" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2 rounded transition">
+    Accept
+  </button>
+</div>
+
+<script>
+  // JavaScript to hide banner on Accept button click
+  document.getElementById('acceptCookies').addEventListener('click', function() {
+    document.getElementById('cookieBanner').style.display = 'none';
+  });
+</script>
+
+</body>
+</html>
