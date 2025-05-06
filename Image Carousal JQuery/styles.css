@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .carousel-container {
+    position: relative;
+    width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    background: white;
+  }
+  
+  .carousel {
+    display: flex;
+    width: 100%;
+    position: relative;
+  }
+  
+  .carousel img {
+    min-width: 100%;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .carousel img.active {
+    opacity: 1;
+    position: relative;
+  }
+  
+  .controls {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .controls button {
+    background-color: #3490dc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .controls button:hover {
+    background-color: #2779bd;
+  }
+  
