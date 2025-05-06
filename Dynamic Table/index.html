@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dynamic Table Generator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+
+  <h1 class="text-3xl font-bold mb-6">Dynamic Table Generator</h1>
+
+  <div class="flex flex-col items-center space-y-4 mb-8">
+    <input id="rowsInput" type="number" placeholder="Enter number of rows" class="p-2 border rounded" />
+    <input id="colsInput" type="number" placeholder="Enter number of columns" class="p-2 border rounded" />
+    <button id="generateBtn" class="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+      Generate Table
+    </button>
+  </div>
+
+  <div id="tableContainer" class="overflow-x-auto"></div>
+
+</body>
+</
