@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Image and Hover Actions</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+  <h1>Interactive Image and Button</h1>
+
+  <!-- Image -->
+  <img id="mainImage" src="https://via.placeholder.com/300x200" alt="Sample Image" onmouseover="showPrime()" />
+
+  <!-- Prime Number Display -->
+  <p id="primeDisplay"></p>
+
+  <!-- Button -->
+  <button id="hoverButton" onmouseover="showFriends()">Hover to See Friends</button>
+
+  <!-- Friends Name Display -->
+  <div id="friendNames"></div>
+</div>
+
+</body>
+</html>
